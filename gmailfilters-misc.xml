@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+	<title>Mail Filters (Misc)</title>
+	<id>tag:mail.google.com,2008:filters:1360008822001,1360008822002</id>
+	<updated>2013-02-04T15:50:38Z</updated>
+	<author>
+		<name>Dafydd Vaughan</name>
+		<email>dafydd+mailfilters@dafyddvaughan.co.uk</email>
+	</author>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1360008822001</id>
+		<updated>2013-02-04T15:50:38Z</updated>
+		<content></content>
+		<apps:property name='from' value='*@reply.github.com OR noreply@github.com'/>
+		<apps:property name='label' value='Accounts/Github'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1360008822002</id>
+		<updated>2013-02-04T15:50:38Z</updated>
+		<content></content>
+		<apps:property name='from' value='no-reply-epetitions@digital.cabinet-office.gov.uk'/>
+		<apps:property name='label' value='Misc/HM Petitions'/>
+	</entry>
+</feed>

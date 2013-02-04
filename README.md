@@ -3,6 +3,9 @@ gmail filters
 
 These are a selection of the filters that I have running in gmail.
 
+* ['gmailfilters-billing'] contains filters for various online purchase emails
+* ['gmailfilters-blackhole'] contains various addresses that continually spam my account
+* ['gmailfilters-misc'] contains miscellaneous filters that don't fit in anywhere else
 * ['gmailfilters-notifications'] contains social media (and other) notifications that require very little attention
 * ['gmailfilters-newsletters'] contains various subscription newsletter filters
 
@@ -25,5 +28,8 @@ These filters rely on the following gmail labels:
 
 -- Dafydd.
 
+['gmailfilters-billing']:https://github.com/daibach/gmail-filters/blob/master/gmailfilters-billing.xml
+['gmailfilters-blackhole']:https://github.com/daibach/gmail-filters/blob/master/gmailfilters-blackhole.xml
+['gmailfilters-misc']:https://github.com/daibach/gmail-filters/blob/master/gmailfilters-misc.xml
 ['gmailfilters-notifications']:https://github.com/daibach/gmail-filters/blob/master/gmailfilters-notifications.xml
-['gmailfilters-newsletters']:https://github.com/daibach/gmail-filters/blob/master/gmailfilters-newsetters.xml
+['gmailfilters-newsletters']:https://github.com/daibach/gmail-filters/blob/master/gmailfilters-newsletters.xml
