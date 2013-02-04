@@ -11,6 +11,12 @@ These are a selection of the filters that I have running in gmail.
 
 These filters rely on the following gmail labels:
 
+* Accounts
+* Accounts/Github
+* Billing & Banking
+* Billing & Banking/Comms
+* Billing & Banking/Amazon
+* Billing & Banking/Groceries
 * Deletable
 * Deletable/Calendar
 * Deletable/Facebook-LinkedIn
@@ -25,6 +31,8 @@ These filters rely on the following gmail labels:
 * MailingList
 * MailingList/DevOps
 * MailingList/OpenTransport
+* Misc
+* Misc/HM Petitions
 
 -- Dafydd.
 
