@@ -26,7 +26,9 @@
       noreply@brainsoffers.com OR
       announce@parallels-universe.com OR
       leclub@accor-mail.com OR
-      info@mail.eastcoast.co.uk
+      info@mail.eastcoast.co.uk OR
+      news.accorhotels@accor-mail.com OR
+      news.ibis@accor-mail.com
       '/>
     <apps:property name='label' value='Deletable/Newsletters/Buying-Stuff'/>
   </entry>
@@ -52,7 +54,10 @@
       bot@recalledproducts.org OR
       netmag@futuremail.net OR
       alumni@swansea.ac.uk OR
-      aboutme@about.me
+      aboutme@about.me OR
+      no-reply@dropboxmail.com OR
+      no-reply@kickstarter.com OR
+      knowledgehub@local.gov.uk
       '/>
     <apps:property name='label' value='Deletable/Newsletters'/>
   </entry>
