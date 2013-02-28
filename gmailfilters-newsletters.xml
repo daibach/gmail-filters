@@ -76,7 +76,7 @@
     <id>tag:mail.google.com,2008:filter:1360003838022</id>
     <updated>2013-02-04T18:50:38Z</updated>
     <content></content>
-    <apps:property name='from' value='gareth@morethanseven.com'/>
+    <apps:property name='from' value='gareth@morethanseven.net'/>
     <apps:property name='label' value='MailingList/DevOps'/>
   </entry>
   <entry>
