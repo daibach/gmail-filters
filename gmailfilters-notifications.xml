@@ -1,174 +1,174 @@
 <?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
-	<title>Mail Filters (Notifications)</title>
-	<id>tag:mail.google.com,2008:filters:136000383800,136000383801,136000383802,136000383803,136000383804,136000383805,136000383806,136000383807,136000383808,136000383809,136000383810,136000383811,136000383812,136000383813,136000383814,136000383815,136000383816,136000383817,136000383818,136000383819,136000383820,136000383821,1360003838101</id>
-	<updated>2013-02-04T18:50:38Z</updated>
-	<author>
-		<name>Dafydd Vaughan</name>
-		<email>dafydd+mailfilters@dafyddvaughan.co.uk</email>
-	</author>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838001</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='*@postmaster.twitter.com'/>
-		<apps:property name='label' value='Deletable/Twitter'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838002</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='*@facebookmail.com OR *@linkedin.com OR linkedin@em.linkedin.com OR *@e.linkedin.com'/>
-		<apps:property name='label' value='Deletable/Facebook-LinkedIn'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838003</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='noreply@foursquare.com'/>
-		<apps:property name='label' value='Deletable/Other-Social'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838004</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='toby.barnes@wearemudlark.com'/>
-		<apps:property name='hasTheWord' value='Chromaroma'/>
-		<apps:property name='label' value='Deletable/Other-Social'/>
-	</entry>	
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838005</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='donotreply@wordpress.com OR comment-reply@wordpress.com'/>
-		<apps:property name='subject' value='&quot;New post&quot;'/>
-		<apps:property name='label' value='Deletable/Wordpress'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838006</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='donotreply@slidesharemail.com'/>
-		<apps:property name='label' value='Deletable/Other-Social'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838007</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='no-reply-flickrmail@flickr.com'/>
-		<apps:property name='label' value='Deletable/Other-Social'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838008</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='gis@monmouthshire.gov.uk'/>
-		<apps:property name='label' value='Deletable/Other-Notifications'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838009</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='calendar-notification@google.com'/>
-		<apps:property name='label' value='Deletable/Calendar'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838101</id>
-		<updated>2013-02-04T15:18:05Z</updated>
-		<content></content>
-		<apps:property name='hasTheWord' value='&quot;Invitation from Google Calendar&quot;'/>
-		<apps:property name='label' value='Deletable/Calendar'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838010</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='today@sunrise.im'/>
-		<apps:property name='label' value='Deletable/Sunrise'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838011</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='paypal@e.paypal.co.uk'/>
-		<apps:property name='label' value='Deletable/Other-Notifications'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838012</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='noreply@updates.hungryhouse.co.uk'/>
-		<apps:property name='label' value='Deletable/Other-Notifications'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838013</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='Transport_for_London@info.tfl.gov.uk'/>
-		<apps:property name='label' value='Deletable/Other-Notifications'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838014</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='alerts@lanyrd.com'/>
-		<apps:property name='label' value='Deletable/Other-Social'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838015</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='hasTheWord' value='&quot;added you on Google+&quot;'/>
-		<apps:property name='label' value='Deletable/Other-Social'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838016</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='nobody@google.com'/>
-		<apps:property name='subject' value='&quot;Change Request&quot;'/>
-		<apps:property name='label' value='Deletable/Other-Notifications'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360003838017</id>
-		<updated>2013-02-04T18:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='noreply@newrelic.com'/>
-		<apps:property name='label' value='Deletable/Other-Notifications'/>
-	</entry>
+  <title>Mail Filters (Notifications)</title>
+  <id>tag:mail.google.com,2008:filters:136000383800,136000383801,136000383802,136000383803,136000383804,136000383805,136000383806,136000383807,136000383808,136000383809,136000383810,136000383811,136000383812,136000383813,136000383814,136000383815,136000383816,136000383817,136000383818,136000383819,136000383820,136000383821,1360003838101</id>
+  <updated>2013-02-04T18:50:38Z</updated>
+  <author>
+    <name>Dafydd Vaughan</name>
+    <email>dafydd+mailfilters@dafyddvaughan.co.uk</email>
+  </author>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838001</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='*@postmaster.twitter.com'/>
+    <apps:property name='label' value='Deletable/Twitter'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838002</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='*@facebookmail.com OR *@linkedin.com OR linkedin@em.linkedin.com OR *@e.linkedin.com'/>
+    <apps:property name='label' value='Deletable/Facebook-LinkedIn'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838003</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='noreply@foursquare.com'/>
+    <apps:property name='label' value='Deletable/Other-Social'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838004</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='toby.barnes@wearemudlark.com'/>
+    <apps:property name='hasTheWord' value='Chromaroma'/>
+    <apps:property name='label' value='Deletable/Other-Social'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838005</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='donotreply@wordpress.com OR comment-reply@wordpress.com'/>
+    <apps:property name='subject' value='&quot;New post&quot;'/>
+    <apps:property name='label' value='Deletable/Wordpress'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838006</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='donotreply@slidesharemail.com'/>
+    <apps:property name='label' value='Deletable/Other-Social'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838007</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='no-reply-flickrmail@flickr.com'/>
+    <apps:property name='label' value='Deletable/Other-Social'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838008</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='gis@monmouthshire.gov.uk'/>
+    <apps:property name='label' value='Deletable/Other-Notifications'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838009</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='calendar-notification@google.com'/>
+    <apps:property name='label' value='Deletable/Calendar'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838101</id>
+    <updated>2013-02-04T15:18:05Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='&quot;Invitation from Google Calendar&quot;'/>
+    <apps:property name='label' value='Deletable/Calendar'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838010</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='today@sunrise.im'/>
+    <apps:property name='label' value='Deletable/Sunrise'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838011</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='paypal@e.paypal.co.uk'/>
+    <apps:property name='label' value='Deletable/Other-Notifications'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838012</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='noreply@updates.hungryhouse.co.uk'/>
+    <apps:property name='label' value='Deletable/Other-Notifications'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838013</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='Transport_for_London@info.tfl.gov.uk'/>
+    <apps:property name='label' value='Deletable/Other-Notifications'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838014</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='alerts@lanyrd.com'/>
+    <apps:property name='label' value='Deletable/Other-Social'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838015</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='hasTheWord' value='&quot;added you on Google+&quot;'/>
+    <apps:property name='label' value='Deletable/Other-Social'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838016</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='nobody@google.com'/>
+    <apps:property name='subject' value='&quot;Change Request&quot;'/>
+    <apps:property name='label' value='Deletable/Other-Notifications'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360003838017</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='noreply@newrelic.com'/>
+    <apps:property name='label' value='Deletable/Other-Notifications'/>
+  </entry>
 </feed>
