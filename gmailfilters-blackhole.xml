@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
-	<title>Mail Filters (Blackhole)</title>
-	<id>tag:mail.google.com,2008:filters:1297349082768</id>
-	<updated>2013-02-04T15:50:38Z</updated>
-	<author>
-		<name>Dafydd Vaughan</name>
-		<email>dafydd+mailfilters@dafyddvaughan.co.uk</email>
-	</author>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1297349082768</id>
-		<updated>2013-02-04T15:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='david@26weekplan.com'/>
-		<apps:property name='shouldArchive' value='true'/>
-		<apps:property name='shouldTrash' value='true'/>
-	</entry>
+  <title>Mail Filters (Blackhole)</title>
+  <id>tag:mail.google.com,2008:filters:1297349082768</id>
+  <updated>2013-02-04T15:50:38Z</updated>
+  <author>
+    <name>Dafydd Vaughan</name>
+    <email>dafydd+mailfilters@dafyddvaughan.co.uk</email>
+  </author>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1297349082768</id>
+    <updated>2013-02-04T15:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='david@26weekplan.com'/>
+    <apps:property name='shouldArchive' value='true'/>
+    <apps:property name='shouldTrash' value='true'/>
+  </entry>
 </feed>

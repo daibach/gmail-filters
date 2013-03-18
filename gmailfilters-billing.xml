@@ -1,66 +1,66 @@
 <?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
-	<title>Mail Filters (Billing &amp; Receipts)</title>
-	<id>tag:mail.google.com,2008:filters:1360008822101,1360008822102,1360008822103,1360008822104,1360008822105</id>
-	<updated>2013-02-04T15:50:38Z</updated>
-	<author>
-		<name>Dafydd Vaughan</name>
-		<email>dafydd+mailfilters@dafyddvaughan.co.uk</email>
-	</author>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360008822101</id>
-		<updated>2013-02-04T15:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='Expedia@uk.expediamail.com OR info@mail.hotels.com'/>
-		<apps:property name='subject' value='&quot;confirmation&quot; OR &quot;final details&quot;'/>
-		<apps:property name='label' value='Billing &amp; Banking'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360008822102</id>
-		<updated>2013-02-04T15:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='
-		  accorhotels.reservation@accor.com OR 
-		  noreply@eastcoast.co.uk OR 
-		  webmaster@travelodge.co.uk OR 
-		  autoresponse@tfl.gov.uk OR 
-		  noreplyuk@just-eat.info OR 
-		  noreply@hungryhouse.co.uk OR
-		  thekitchen@dominos.co.uk OR 
-		  do_not_reply@itunes.com OR 
-		  coventgarden@apple.com OR 
-		  stdavids2@apple.com
-		  '/>
-		<apps:property name='label' value='Billing &amp; Banking'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360008822103</id>
-		<updated>2013-02-04T15:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='O2Shop@o2.com OR noreply@isetup.o2.co.uk OR support@plus.net OR ebilling@bt.com'/>
-		<apps:property name='label' value='Billing &amp; Banking/Comms'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360008822104</id>
-		<updated>2013-02-04T15:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='auto-shipping@amazon.co.uk OR auto-confirm@amazon.co.uk OR order-update@amazon.co.uk'/>
-		<apps:property name='label' value='Billing &amp; Banking/Amazon'/>
-	</entry>
-	<entry>
-		<category term='filter'></category>
-		<title>Mail Filter</title>
-		<id>tag:mail.google.com,2008:filter:1360008822105</id>
-		<updated>2013-02-04T15:50:38Z</updated>
-		<content></content>
-		<apps:property name='from' value='home.shopping@asda.co.uk'/>
-		<apps:property name='label' value='Billing &amp; Banking/Groceries'/>
-	</entry>
+  <title>Mail Filters (Billing &amp; Receipts)</title>
+  <id>tag:mail.google.com,2008:filters:1360008822101,1360008822102,1360008822103,1360008822104,1360008822105</id>
+  <updated>2013-02-04T15:50:38Z</updated>
+  <author>
+    <name>Dafydd Vaughan</name>
+    <email>dafydd+mailfilters@dafyddvaughan.co.uk</email>
+  </author>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360008822101</id>
+    <updated>2013-02-04T15:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='Expedia@uk.expediamail.com OR info@mail.hotels.com'/>
+    <apps:property name='subject' value='&quot;confirmation&quot; OR &quot;final details&quot;'/>
+    <apps:property name='label' value='Billing &amp; Banking'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360008822102</id>
+    <updated>2013-02-04T15:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='
+      accorhotels.reservation@accor.com OR
+      noreply@eastcoast.co.uk OR
+      webmaster@travelodge.co.uk OR
+      autoresponse@tfl.gov.uk OR
+      noreplyuk@just-eat.info OR
+      noreply@hungryhouse.co.uk OR
+      thekitchen@dominos.co.uk OR
+      do_not_reply@itunes.com OR
+      coventgarden@apple.com OR
+      stdavids2@apple.com
+      '/>
+    <apps:property name='label' value='Billing &amp; Banking'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360008822103</id>
+    <updated>2013-02-04T15:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='O2Shop@o2.com OR noreply@isetup.o2.co.uk OR support@plus.net OR ebilling@bt.com'/>
+    <apps:property name='label' value='Billing &amp; Banking/Comms'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360008822104</id>
+    <updated>2013-02-04T15:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='auto-shipping@amazon.co.uk OR auto-confirm@amazon.co.uk OR order-update@amazon.co.uk'/>
+    <apps:property name='label' value='Billing &amp; Banking/Amazon'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1360008822105</id>
+    <updated>2013-02-04T15:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='home.shopping@asda.co.uk'/>
+    <apps:property name='label' value='Billing &amp; Banking/Groceries'/>
+  </entry>
 </feed>
