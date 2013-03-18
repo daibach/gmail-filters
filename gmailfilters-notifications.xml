@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
   <title>Mail Filters (Notifications)</title>
-  <id>tag:mail.google.com,2008:filters:136000383800,136000383801,136000383802,136000383803,136000383804,136000383805,136000383806,136000383807,136000383808,136000383809,136000383810,136000383811,136000383812,136000383813,136000383814,136000383815,136000383816,136000383817,136000383818,136000383819,136000383820,136000383821,1360003838101,1362073664001</id>
+  <id>tag:mail.google.com,2008:filters:136000383800,136000383801,136000383802,136000383803,1363598318001,136000383804,136000383805,136000383806,136000383807,136000383808,136000383809,136000383810,136000383811,136000383812,136000383813,136000383814,136000383815,136000383816,136000383817,136000383818,136000383819,136000383820,136000383821,1360003838101,1362073664001</id>
   <updated>2013-02-04T18:50:38Z</updated>
   <author>
     <name>Dafydd Vaughan</name>
@@ -31,6 +31,15 @@
     <updated>2013-02-04T18:50:38Z</updated>
     <content></content>
     <apps:property name='from' value='noreply@foursquare.com'/>
+    <apps:property name='label' value='Deletable/Other-Social'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1363598318001</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='noreply@untappd.com'/>
     <apps:property name='label' value='Deletable/Other-Social'/>
   </entry>
   <entry>
