@@ -42,7 +42,7 @@
     <id>tag:mail.google.com,2008:filter:1360008822103</id>
     <updated>2013-02-04T15:50:38Z</updated>
     <content></content>
-    <apps:property name='from' value='O2Shop@o2.com OR noreply@isetup.o2.co.uk OR support@plus.net OR ebilling@bt.com'/>
+    <apps:property name='from' value='O2Shop@o2.com OR noreply@isetup.o2.co.uk OR support@plus.net OR ebilling@bt.com OR btcomms@btcomms.com'/>
     <apps:property name='label' value='Billing &amp; Banking/Comms'/>
   </entry>
   <entry>
