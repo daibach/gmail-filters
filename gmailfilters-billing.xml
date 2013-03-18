@@ -51,7 +51,7 @@
     <id>tag:mail.google.com,2008:filter:1360008822104</id>
     <updated>2013-02-04T15:50:38Z</updated>
     <content></content>
-    <apps:property name='from' value='auto-shipping@amazon.co.uk OR auto-confirm@amazon.co.uk OR order-update@amazon.co.uk'/>
+    <apps:property name='from' value='auto-shipping@amazon.co.uk OR auto-confirm@amazon.co.uk OR order-update@amazon.co.uk OR noreply@despatch.net'/>
     <apps:property name='label' value='Billing &amp; Banking/Amazon'/>
   </entry>
   <entry>
