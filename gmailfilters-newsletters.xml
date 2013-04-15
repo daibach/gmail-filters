@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
   <title>Mail Filters (Newsletters)</title>
-  <id>tag:mail.google.com,2008:filters:136000383818,136000383819,136000383820,136000383821,136000383822,136000383823</id>
+  <id>tag:mail.google.com,2008:filters:136000383818,136000383819,136000383820,136000383821,136000383822,136000383823,1366018572001,1366018572002</id>
   <updated>2013-02-04T18:50:38Z</updated>
   <author>
     <name>Dafydd Vaughan</name>
@@ -88,5 +88,24 @@
     <content></content>
     <apps:property name='hasTheWord' value='list:&quot;open-transport.lists.okfn.org&quot;'/>
     <apps:property name='label' value='MailingList/OpenTransport'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1366018572001</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='action@ifttt.com'/>
+    <apps:property name='subject' value='&quot;ICO-DecisionNotice&quot;'/>
+    <apps:property name='label' value='Deletable/Newsletters/ICO'/>
+  </entry>
+  <entry>
+    <category term='filter'></category>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1366018572002</id>
+    <updated>2013-02-04T18:50:38Z</updated>
+    <content></content>
+    <apps:property name='from' value='roo.reynolds@gmail.com'/>
+    <apps:property name='label' value='MailingList/Roosletter'/>
   </entry>
 </feed>
