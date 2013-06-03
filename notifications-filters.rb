@@ -26,7 +26,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       em.linkedin.com
       e.linkedin.com
     }
-    has [{:or => "from:(#{comms_provider_emails.join("|")})"}]
+    has [{:or => "from:(#{linkedin_emails.join("|")})"}]
     label 'deletable/facebook-linkedin'
   }
   filter {

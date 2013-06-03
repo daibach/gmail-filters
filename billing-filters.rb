@@ -32,7 +32,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       noreply@despatch.net
       yourdelivery@dpd.co.uk
     }
-    has [{:or => "from:(#{comms_provider_emails.join("|")})"}]
+    has [{:or => "from:(#{amazon_emails.join("|")})"}]
     label 'billing & banking/amazon'
     never_spam
   }
