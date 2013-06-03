@@ -11,7 +11,7 @@ else
 end
 
 fs = GmailBritta.filterset(:me => MY_EMAILS) do
-  # Pivotal Filters
+
   filter {
     has %w{from:postmaster.twitter.com}
     label 'deletable/twitter'

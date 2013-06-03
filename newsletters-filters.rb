@@ -11,7 +11,7 @@ else
 end
 
 fs = GmailBritta.filterset(:me => MY_EMAILS) do
-  # Pivotal Filters
+
   filter {
     newsletter_emails = %w{
       news_europe@insideapple.apple.com

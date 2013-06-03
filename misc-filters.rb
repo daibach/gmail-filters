@@ -11,7 +11,7 @@ else
 end
 
 fs = GmailBritta.filterset(:me => MY_EMAILS) do
-  
+
   filter {
     has %w{from:reply.github.com}
     label 'accounts/github'
