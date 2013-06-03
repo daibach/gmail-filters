@@ -62,32 +62,6 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'deletable/newsletters/deal-with'
   }
 
-  filter {
-    has %w{from:Expedia@uk.expediamail.com subject:confirmation}
-    label 'billing & banking'
-    never_spam
-  }.otherwise {
-    has %w{from:Expedia@uk.expediamail.com subject:"final\ details"}
-    label 'billing & banking'
-    never_spam
-  }.otherwise {
-    has %w{from:Expedia@uk.expediamail.com}
-    label 'deletable/newsletters'
-  }
-  filter {
-    has %w{from:info@mail.hotels.com subject:confirmation}
-    label 'billing & banking'
-    never_spam
-  }.otherwise {
-    has %w{from:info@mail.hotels.com subject:"final\ details"}
-    label 'billing & banking'
-    never_spam
-  }.otherwise {
-    has %w{from:info@mail.hotels.com}
-    label 'deletable/newsletters'
-  }
-
-
 end
 
 puts fs.generate
