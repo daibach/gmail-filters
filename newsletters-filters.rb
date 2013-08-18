@@ -20,6 +20,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       amazon-offers@amazon.co.uk
       no-reply-aws@amazon.com
       store-news@amazon.co.uk
+      store_news@amazon.co.uk
       vfe-campaign-response@amazon.co.uk
       martinsmoneytips@moneysavingexpert.com
       promotions@mail.pizzaexpress.com
