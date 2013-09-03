@@ -13,7 +13,12 @@ end
 fs = GmailBritta.filterset(:me => MY_EMAILS) do
 
   filter {
-    has %w{from:postmaster.twitter.com}
+    twitter_emails = %w{
+      postmaster.twitter.com
+      notify@twitter.com
+      info@twitter.com
+    }
+    has [{:or => "from:(#{twitter_emails.join("|")})"}]
     label 'deletable/twitter'
   }
   filter {
