@@ -29,6 +29,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       auto-shipping@amazon.co.uk
       auto-confirm@amazon.co.uk
       order-update@amazon.co.uk
+      digital-no-reply@amazon.co.uk
       noreply@despatch.net
       yourdelivery@dpd.co.uk
     }
