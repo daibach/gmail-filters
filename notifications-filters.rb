@@ -61,7 +61,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
   }
   filter {
     has %w{from:alerts@lanyrd.com}
-    label 'deltable/other-social'
+    label 'deletable/other-social'
   }
   filter {
     has %w{"added you on Google+"}
