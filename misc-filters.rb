@@ -24,6 +24,10 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     has %w{from:no-reply-epetitions@digital.cabinet-office.gov.uk}
     label 'misc/hm petitions'
   }
+  filter {
+    has %w{subject:"Website Contact Message" from:daibach.co.uk}
+    label 'misc/website-contact'
+  }
 end
 
 puts fs.generate
