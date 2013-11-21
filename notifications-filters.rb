@@ -80,6 +80,14 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'deletable/calendar'
   }
   filter {
+    has %w{subject:"Updated Invitation"}
+    label 'deletable/calendar'
+  }
+  filter {
+    has %w{filename:invite.ics}
+    label 'deletable/calendar'
+  }
+  filter {
     has %w{from:today@sunrise.im}
     label 'deletable/sunrise'
   }
