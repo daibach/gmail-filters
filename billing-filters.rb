@@ -50,18 +50,10 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
 
   filter {
     online_shop_emails = %w{
-      accorhotels.reservation@accor.com
-      noreply@eastcoast.co.uk
-      webmaster@travelodge.co.uk
-      autoresponse@tfl.gov.uk
       noreplyuk@just-eat.info
       noreply@hungryhouse.co.uk
       thekitchen@dominos.co.uk
       support@github.com
-      do_not_reply@itunes.com
-      coventgarden@apple.com
-      stratfordcity@apple.com
-      stdavids2@apple.com
     }
     has [{:or => "from:(#{online_shop_emails.join("|")})"}]
     label 'billing & banking'
@@ -69,12 +61,37 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
   }
 
   filter {
+    apple_emails = %w{
+      do_not_reply@itunes.com
+      do_not_reply@apple.com
+      coventgarden@apple.com
+      stratfordcity@apple.com
+      stdavids2@apple.com
+    }
+    has [{:or => "from:(#{apple_emails.join("|")})"}]
+    label 'billing & banking/apple'
+    never_spam
+  }
+
+  filter {
+    travel_emails = %w{
+      accorhotels.reservation@accor.com
+      noreply@eastcoast.co.uk
+      webmaster@travelodge.co.uk
+      autoresponse@tfl.gov.uk
+    }
+    has [{:or => "from:(#{travel_emails.join("|")})"}]
+    label 'billing & banking/travel'
+    never_spam
+  }
+
+  filter {
     has %w{from:Expedia@uk.expediamail.com subject:confirmation}
-    label 'billing & banking'
+    label 'billing & banking/travel'
     never_spam
   }.otherwise {
     has %w{from:Expedia@uk.expediamail.com subject:"final\ details"}
-    label 'billing & banking'
+    label 'billing & banking/travel'
     never_spam
   }.otherwise {
     has %w{from:Expedia@uk.expediamail.com}
@@ -82,11 +99,11 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
   }
   filter {
     has %w{from:info@mail.hotels.com subject:confirmation}
-    label 'billing & banking'
+    label 'billing & banking/travel'
     never_spam
   }.otherwise {
     has %w{from:info@mail.hotels.com subject:"final\ details"}
-    label 'billing & banking'
+    label 'billing & banking/travel'
     never_spam
   }.otherwise {
     has %w{from:info@mail.hotels.com}
