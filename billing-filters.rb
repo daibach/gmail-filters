@@ -18,6 +18,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       support@plus.net
       ebilling@bt.com
       btcomms@btcomms.com
+      no_reply@giffgaff.com
     }
     has [{:or => "from:(#{comms_provider_emails.join("|")})"}]
     label 'billing & banking/comms'
