@@ -34,6 +34,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       news.ibis@accor-mail.com
       news@wru.co.uk
       news@wru.sportmailer.com
+      retail@wru.sportmailer.com
       noreply@mailer.e-connectservice.com
       bot@recalledproducts.org
       netmag@futuremail.net
