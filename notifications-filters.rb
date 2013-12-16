@@ -43,7 +43,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'deletable/other-social'
   }
   filter {
-    has %w{from:noreply@yammer.com}
+    has %w{from:yammer.com}
     label 'deletable/other-social'
   }
   filter {
