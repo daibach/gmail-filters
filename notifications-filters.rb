@@ -39,6 +39,10 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'deletable/wordpress'
   }
   filter {
+    has %w{from:tumblr.com}
+    label 'deletable/other-social'
+  }
+  filter {
     has %w{from:fitbit.com}
     label 'deletable/other-social'
   }
