@@ -34,6 +34,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       digital-no-reply@amazon.co.uk
       noreply@despatch.net
       yourdelivery@dpd.co.uk
+      aws-receivables@amazon.com
     }
     has [{:or => "from:(#{amazon_emails.join("|")})"}]
     label 'billing & banking/amazon'
