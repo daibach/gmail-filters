@@ -139,6 +139,10 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     has %w{from:noreply@insideicloud.icloud.com}
     label 'deletable/other-notifications'
   }
+  filter {
+    has %w{from:nominet@nominet.org.uk}
+    label 'deletable/other-notifications'
+  }
 
 
 end
