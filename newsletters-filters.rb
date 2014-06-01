@@ -17,6 +17,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       news_europe@insideapple.apple.com
       info@email.moo.com
       moosletter@moo.com
+      noreply@amazon.co.uk
       amazon-offers@amazon.co.uk
       no-reply-aws@amazon.com
       store-news@amazon.co.uk
@@ -39,6 +40,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       noreply@mailer.e-connectservice.com
       bot@recalledproducts.org
       netmag@futuremail.net
+      newsletter@creativebloq.com
       alumni@swansea.ac.uk
       aboutme@about.me
       no-reply@dropboxmail.com
@@ -48,6 +50,8 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       arranwhisky.com
       queenelizabetholympicpark-london.co.uk
       microsoftuk@e-mail.microsoft.com
+      John_Lewis@em.johnlewis.com
+      thefrontrow@england2015.rugbyworldcup.com
     }
     has [{:or => "from:(#{newsletter_emails.join("|")})"}]
     label 'deletable/newsletters'
