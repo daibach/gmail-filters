@@ -27,6 +27,12 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
   filter {
     has %w{subject:"Website Contact Message" from:daibach.co.uk}
     label 'misc/website-contact'
+    never_spam
+  }
+  filter {
+    has %w{subject:"Website Contact Messages" from:daibach.co.uk}
+    label 'misc/website-contact'
+    never_spam
   }
 end
 
