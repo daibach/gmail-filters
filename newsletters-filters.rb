@@ -16,11 +16,9 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     newsletter_emails = %w{
       news_europe@insideapple.apple.com
       info@email.moo.com
-      moosletter@moo.com
       noreply@amazon.co.uk
       amazon-offers@amazon.co.uk
       no-reply-aws@amazon.com
-      store-news@amazon.co.uk
       store_news@amazon.co.uk
       vfe-campaign-response@amazon.co.uk
       aws-marketing-email-replies@amazon.com
@@ -28,17 +26,13 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       promotions@mail.pizzaexpress.com
       offers@send.dominosemail.co.uk
       noreply@brainsoffers.com
-      noreply@sabrain.com
       announce@parallels-universe.com
       leclub@accor-mail.com
       info@mail.eastcoast.co.uk
       news.accorhotels@accor-mail.com
       news.ibis@accor-mail.com
-      news@wru.co.uk
       news@wru.sportmailer.com
       retail@wru.sportmailer.com
-      noreply@mailer.e-connectservice.com
-      bot@recalledproducts.org
       netmag@futuremail.net
       newsletter@creativebloq.com
       alumni@swansea.ac.uk
