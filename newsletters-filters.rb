@@ -16,6 +16,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     newsletter_emails = %w{
       news_europe@insideapple.apple.com
       info@email.moo.com
+      info@news.moo.com
       noreply@amazon.co.uk
       amazon-offers@amazon.co.uk
       no-reply-aws@amazon.com
@@ -49,6 +50,8 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       events@cratebrewery.com
       supportlondon@uber.com
       waitrose@em.waitrose.com
+      mywaitrose@em.waitrose.com
+      resources@bitly.com
     }
     has [{:or => "from:(#{newsletter_emails.join("|")})"}]
     label 'deletable/newsletters'
