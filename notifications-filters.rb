@@ -147,6 +147,10 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     has %w{from:info@meetup.com}
     label 'deletable/other-social'
   }
+  filter {
+    has %w{from:alert@pingdom.com}
+    label 'deletable/alert'
+  }
 
 
 end
