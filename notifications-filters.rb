@@ -84,6 +84,10 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'deletable/other-social'
   }
   filter {
+    has %w{from:noreply@mail.theguardian.com}
+    label 'deletable/other-social'
+  }
+  filter {
     has %w{from:calendar-notification@google.com}
     label 'deletable/calendar'
   }
