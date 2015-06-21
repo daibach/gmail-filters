@@ -30,6 +30,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       announce@parallels-universe.com
       leclub@accor-mail.com
       info@mail.eastcoast.co.uk
+      firstgreatwestern@e.firstgreatwestern.co.uk
       news.accorhotels@accor-mail.com
       news.ibis@accor-mail.com
       news@wru.sportmailer.com
@@ -53,12 +54,25 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       mywaitrose@em.waitrose.com
       resources@bitly.com
       noreply@medium.com
+      email.thetimes.co.uk
+      info@eebria.com
+      news@grindandco.com
+      oreilly@post.oreilly.com
+      openrightsgroup.org
     }
     has [{:or => "from:(#{newsletter_emails.join("|")})"}]
     label 'deletable/newsletters'
   }
   filter {
     has %w{from:digital.cabinet-office.gov.uk subject:"teacamp"}
+    label 'deletable/newsletters'
+  }
+  filter {
+    has %w{from:dxw.com subject:"teacamp"}
+    label 'deletable/newsletters'
+  }
+  filter {
+    has %w{from:GOVUK@public.govdelivery.com}
     label 'deletable/newsletters'
   }
   filter {
@@ -73,7 +87,6 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     has %w{list:open-transport.lists.okfn.org}
     label 'mailinglist/opentransport'
   }.archive_unless_directed
-
   filter {
     has %w{headoffice@keatons.com}
     label 'deletable/newsletters/deal-with'
