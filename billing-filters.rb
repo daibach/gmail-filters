@@ -56,6 +56,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       noreply@hungryhouse.co.uk
       thekitchen@dominos.co.uk
       support@github.com
+      noreply@eebria.com
     }
     has [{:or => "from:(#{online_shop_emails.join("|")})"}]
     label 'billing & banking'
