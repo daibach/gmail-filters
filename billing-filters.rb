@@ -27,6 +27,11 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
   }
 
   filter {
+    has %w{from:thameswater.co.uk}
+    label 'billing & banking/house'
+  }
+
+  filter {
     amazon_emails = %w{
       auto-shipping@amazon.co.uk
       auto-confirm@amazon.co.uk
