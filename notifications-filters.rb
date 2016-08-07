@@ -156,6 +156,10 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'deletable/alert'
   }
   filter {
+    has %w{no-reply@pingdom.com}
+    label 'deletable/other-notifications'
+  }
+  filter {
     has %w{from:autoresponder@rightmove.com}
     label 'deletable/other-notifications'
   }
