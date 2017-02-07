@@ -118,6 +118,10 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     has %w{from:info@mail.hotels.com}
     label 'deletable/newsletters'
   }
+  filter {
+    has %w{from:hello@bulb.co.uk}
+    label 'billing & banking/house'
+  }
 
 end
 
