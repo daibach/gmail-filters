@@ -79,67 +79,38 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     has %w{filename:invite.ics}
     label 'deletable/calendar'
   }
+
+
   filter {
-    has %w{from:today@sunrise.im}
-    label 'deletable/sunrise'
-  }
-  filter {
-    has %w{from:paypal@e.paypal.co.uk}
-    label 'deletable/other-notifications'
-  }
-  filter {
-    has %w{from:gis@monmouthshire.gov.uk}
-    label 'deletable/other-notifications'
-  }
-  filter {
-    has %w{from:updates.hungryhouse.co.uk}
-    label 'deletable/other-notifications'
-  }
-  filter {
-    has %w{from:info.tfl.gov.uk}
-    label 'deletable/other-notifications'
-  }
-  filter {
-    has %w{from:newrelic.com}
-    label 'deletable/other-notifications'
-  }
-  filter {
-    has %w{from:dropbox.com}
-    label 'deletable/other-notifications'
-  }
-  filter {
-    has %w{from:trello.com}
+    notifications_emails = %w{
+      paypal@e.paypal.co.uk
+      gis@monmouthshire.gov.uk
+      updates.hungryhouse.co.uk
+      info.tfl.gov.uk
+      newrelic.com
+      dropbox.com
+      trello.com
+      noreply@insideicloud.icloud.com
+      nominet@nominet.org.uk
+      no-reply@pingdom.com
+
+      autoresponder@rightmove.com
+      no-reply@certificates.amazon.com
+    }
+    has [{:or => "from:(#{notifications_emails.join("|")})"}]
     label 'deletable/other-notifications'
   }
   filter {
     has %w{subject:"Change Request" from:nobody@google.com}
     label 'deletable/other-notifications'
   }
-  filter {
-    has %w{from:noreply@insideicloud.icloud.com}
-    label 'deletable/other-notifications'
-  }
-  filter {
-    has %w{from:nominet@nominet.org.uk}
-    label 'deletable/other-notifications'
-  }
+
+
+
   filter {
     has %w{from:alert@pingdom.com}
     label 'deletable/alert'
   }
-  filter {
-    has %w{no-reply@pingdom.com}
-    label 'deletable/other-notifications'
-  }
-  filter {
-    has %w{from:autoresponder@rightmove.com}
-    label 'deletable/other-notifications'
-  }
-  filter {
-    has %w{from:no-reply@certificates.amazon.com}
-    label 'deletable/other-notifications'
-  }
-
 
 end
 
