@@ -11,25 +11,6 @@ else
 end
 
 fs = GmailBritta.filterset(:me => MY_EMAILS) do
-  filter {
-    comms_provider_emails = %w{
-      O2Shop@o2.com
-      noreply@isetup.o2.co.uk
-      support@plus.net
-      ebilling@bt.com
-      btcomms@btcomms.com
-      no_reply@giffgaff.com
-      tubewifi@virginmedia.com
-    }
-    has [{:or => "from:(#{comms_provider_emails.join("|")})"}]
-    label 'billing & banking/comms'
-    never_spam
-  }
-
-  filter {
-    has %w{from:thameswater.co.uk}
-    label 'billing & banking/house'
-  }
 
   filter {
     amazon_emails = %w{
@@ -47,27 +28,6 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     never_spam
   }
 
-  filter {
-    grocery_shop_emails = %w{
-      home.shopping@asda.co.uk
-    }
-    has [{:or => "from:(#{grocery_shop_emails.join("|")})"}]
-    label 'billing & banking/groceries'
-    never_spam
-  }
-
-  filter {
-    online_shop_emails = %w{
-      noreplyuk@just-eat.info
-      noreply@hungryhouse.co.uk
-      thekitchen@dominos.co.uk
-      support@github.com
-      noreply@eebria.com
-    }
-    has [{:or => "from:(#{online_shop_emails.join("|")})"}]
-    label 'billing & banking'
-    never_spam
-  }
 
   filter {
     apple_emails = %w{
@@ -82,6 +42,37 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     never_spam
   }
 
+
+
+  filter {
+    comms_provider_emails = %w{
+      O2Shop@o2.com
+      noreply@isetup.o2.co.uk
+      support@plus.net
+      ebilling@bt.com
+      no-reply@bt.com
+      btcomms@btcomms.com
+      no_reply@giffgaff.com
+      tubewifi@virginmedia.com
+    }
+    has [{:or => "from:(#{comms_provider_emails.join("|")})"}]
+    label 'billing & banking/comms'
+    never_spam
+  }
+
+
+
+  filter {
+    has %w{from:hello@bulb.co.uk}
+    label 'billing & banking/house'
+  }
+  filter {
+    has %w{from:thameswater.co.uk}
+    label 'billing & banking/house'
+  }
+
+
+
   filter {
     travel_emails = %w{
       accorhotels.reservation@accor.com
@@ -93,7 +84,6 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'billing & banking/travel'
     never_spam
   }
-
   filter {
     has %w{from:Expedia@uk.expediamail.com subject:confirmation}
     label 'billing & banking/travel'
@@ -118,11 +108,32 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     has %w{from:info@mail.hotels.com}
     label 'deletable/newsletters'
   }
+
+
+
   filter {
-    has %w{from:hello@bulb.co.uk}
-    label 'billing & banking/house'
+    online_shop_emails = %w{
+      noreplyuk@just-eat.info
+      noreply@hungryhouse.co.uk
+      thekitchen@dominos.co.uk
+      support@github.com
+      noreply@eebria.com
+    }
+    has [{:or => "from:(#{online_shop_emails.join("|")})"}]
+    label 'billing & banking'
+    never_spam
   }
 
+
+
+  filter {
+    grocery_shop_emails = %w{
+      home.shopping@asda.co.uk
+    }
+    has [{:or => "from:(#{grocery_shop_emails.join("|")})"}]
+    label 'billing & banking/groceries'
+    never_spam
+  }
 end
 
 puts fs.generate
