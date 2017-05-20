@@ -74,6 +74,10 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     has %w{subject:"Change Request" from:nobody@google.com}
     label 'deletable/other-notifications'
   }
+  filter {
+    has %w{subject:"expires" from:support-renew@gandi.net}
+    label 'deletable/other-notifications'
+  }
 
 
   filter {
@@ -82,9 +86,13 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       alerts@lanyrd.com
       info@meetup.com
       noreply@mail.theguardian.com
+      applepay.apple.com
+      email.apple.com
+      id.apple.com
       fitbit.com
       flickr.com
       foursquare.com
+      instagram.com
       slidesharemail.com
       tumblr.com
       yammer.com
@@ -109,6 +117,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       postmaster.twitter.com
       notify@twitter.com
       info@twitter.com
+      verify@twitter.com
     }
     has [{:or => "from:(#{twitter_emails.join("|")})"}]
     label 'deletable/twitter'
