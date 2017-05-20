@@ -74,6 +74,22 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
 
 
   filter {
+    takeaway_emails = %w{
+      deliveroo.com
+      deliveroo.co.uk
+      dominos.co.uk
+      hungryhouse.co.uk
+      just-eat.co.uk
+      just-eat.info
+    }
+    has [{:or => "from:(#{takeaway_emails.join("|")})"}]
+    label 'billing & banking/takeaway'
+    never_spam
+  }
+
+
+
+  filter {
     travel_emails = %w{
       accorhotels.reservation@accor.com
       noreply@eastcoast.co.uk
@@ -115,16 +131,15 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
 
   filter {
     online_shop_emails = %w{
-      noreplyuk@just-eat.info
-      noreply@hungryhouse.co.uk
-      thekitchen@dominos.co.uk
       support@github.com
-      noreply@eebria.com
-      deliveroo.co.uk
     }
     has [{:or => "from:(#{online_shop_emails.join("|")})"}]
     label 'billing & banking'
     never_spam
+  }
+  filter {
+    has %w{-list:"mcsv.net" from:noreply@eebria.com}
+    label 'billing & banking'
   }
 
 end
