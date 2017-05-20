@@ -124,16 +124,6 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     never_spam
   }
 
-
-
-  filter {
-    grocery_shop_emails = %w{
-      home.shopping@asda.co.uk
-    }
-    has [{:or => "from:(#{grocery_shop_emails.join("|")})"}]
-    label 'billing & banking/groceries'
-    never_spam
-  }
 end
 
 puts fs.generate
