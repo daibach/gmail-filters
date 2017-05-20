@@ -63,6 +63,13 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
 
 
   filter {
+    has %w{support-en@support.gandi.net}
+    label 'billing & banking/gandi'
+  }
+
+
+
+  filter {
     has %w{from:hello@bulb.co.uk}
     label 'billing & banking/house'
   }
@@ -97,6 +104,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       autoresponse@tfl.gov.uk
       zipcar.com
       mytaxi.net
+      enterprise.com
     }
     has [{:or => "from:(#{travel_emails.join("|")})"}]
     label 'billing & banking/travel'
