@@ -79,6 +79,8 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       noreply@eastcoast.co.uk
       webmaster@travelodge.co.uk
       autoresponse@tfl.gov.uk
+      zipcar.com
+      mytaxi.net
     }
     has [{:or => "from:(#{travel_emails.join("|")})"}]
     label 'billing & banking/travel'
@@ -118,6 +120,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       thekitchen@dominos.co.uk
       support@github.com
       noreply@eebria.com
+      deliveroo.co.uk
     }
     has [{:or => "from:(#{online_shop_emails.join("|")})"}]
     label 'billing & banking'
