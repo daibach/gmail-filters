@@ -39,32 +39,20 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'deletable/wordpress'
   }
   filter {
-    has %w{from:tumblr.com}
-    label 'deletable/other-social'
-  }
-  filter {
-    has %w{from:fitbit.com}
-    label 'deletable/other-social'
-  }
-  filter {
-    has %w{from:yammer.com}
-    label 'deletable/other-social'
-  }
-  filter {
-    has %w{from:foursquare.com}
-    label 'deletable/other-social'
-  }
-  filter {
-    has %w{from:untappd.com}
-    label 'deletable/other-social'
-  }
-  #chromaroma
-  filter {
-    has %w{from:slidesharemail.com}
-    label 'deletable/other-social'
-  }
-  filter {
-    has %w{from:flickr.com}
+    social_emails = %w{
+      auto-message@eventbrite.com
+      alerts@lanyrd.com
+      info@meetup.com
+      noreply@mail.theguardian.com
+      fitbit.com
+      flickr.com
+      foursquare.com
+      slidesharemail.com
+      tumblr.com
+      yammer.com
+      untappd.com
+    }
+    has [{:or => "from:(#{social_emails.join("|")})"}]
     label 'deletable/other-social'
   }
   filter {
@@ -72,19 +60,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'deletable/other-social'
   }
   filter {
-    has %w{from:alerts@lanyrd.com}
-    label 'deletable/other-social'
-  }
-  filter {
     has %w{"added you on Google+"}
-    label 'deletable/other-social'
-  }
-  filter {
-    has %w{from:auto-message@eventbrite.com}
-    label 'deletable/other-social'
-  }
-  filter {
-    has %w{from:noreply@mail.theguardian.com}
     label 'deletable/other-social'
   }
   filter {
@@ -146,10 +122,6 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
   filter {
     has %w{from:nominet@nominet.org.uk}
     label 'deletable/other-notifications'
-  }
-  filter {
-    has %w{from:info@meetup.com}
-    label 'deletable/other-social'
   }
   filter {
     has %w{from:alert@pingdom.com}
