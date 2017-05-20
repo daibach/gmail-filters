@@ -12,57 +12,14 @@ end
 
 fs = GmailBritta.filterset(:me => MY_EMAILS) do
 
+
   filter {
-    twitter_emails = %w{
-      postmaster.twitter.com
-      notify@twitter.com
-      info@twitter.com
-    }
-    has [{:or => "from:(#{twitter_emails.join("|")})"}]
-    label 'deletable/twitter'
+    has %w{from:alert@pingdom.com}
+    label 'deletable/alert'
   }
-  filter {
-    has %w{from:facebookmail.com}
-    label 'deletable/facebook-linkedin'
-  }
-  filter {
-    linkedin_emails = %w{
-      linkedin.com
-      em.linkedin.com
-      e.linkedin.com
-    }
-    has [{:or => "from:(#{linkedin_emails.join("|")})"}]
-    label 'deletable/facebook-linkedin'
-  }
-  filter {
-    has %w{from:wordpress.com}
-    label 'deletable/wordpress'
-  }
-  filter {
-    social_emails = %w{
-      auto-message@eventbrite.com
-      alerts@lanyrd.com
-      info@meetup.com
-      noreply@mail.theguardian.com
-      fitbit.com
-      flickr.com
-      foursquare.com
-      slidesharemail.com
-      tumblr.com
-      yammer.com
-      untappd.com
-    }
-    has [{:or => "from:(#{social_emails.join("|")})"}]
-    label 'deletable/other-social'
-  }
-  filter {
-    has %w{from:toby.barnes@wearemudlark.com "Chromaroma"}
-    label 'deletable/other-social'
-  }
-  filter {
-    has %w{"added you on Google+"}
-    label 'deletable/other-social'
-  }
+
+
+
   filter {
     has %w{from:calendar-notification@google.com}
     label 'deletable/calendar'
@@ -78,6 +35,19 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
   filter {
     has %w{filename:invite.ics}
     label 'deletable/calendar'
+  }
+
+
+
+  filter {
+    linkedin_emails = %w{
+      linkedin.com
+      em.linkedin.com
+      e.linkedin.com
+      facebookmail.com
+    }
+    has [{:or => "from:(#{linkedin_emails.join("|")})"}]
+    label 'deletable/facebook-linkedin'
   }
 
 
@@ -106,10 +76,49 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
   }
 
 
+  filter {
+    social_emails = %w{
+      auto-message@eventbrite.com
+      alerts@lanyrd.com
+      info@meetup.com
+      noreply@mail.theguardian.com
+      fitbit.com
+      flickr.com
+      foursquare.com
+      slidesharemail.com
+      tumblr.com
+      yammer.com
+      untappd.com
+    }
+    has [{:or => "from:(#{social_emails.join("|")})"}]
+    label 'deletable/other-social'
+  }
+  filter {
+    has %w{from:toby.barnes@wearemudlark.com "Chromaroma"}
+    label 'deletable/other-social'
+  }
+  filter {
+    has %w{"added you on Google+"}
+    label 'deletable/other-social'
+  }
+
+
 
   filter {
-    has %w{from:alert@pingdom.com}
-    label 'deletable/alert'
+    twitter_emails = %w{
+      postmaster.twitter.com
+      notify@twitter.com
+      info@twitter.com
+    }
+    has [{:or => "from:(#{twitter_emails.join("|")})"}]
+    label 'deletable/twitter'
+  }
+
+
+
+  filter {
+    has %w{from:wordpress.com}
+    label 'deletable/wordpress'
   }
 
 end
