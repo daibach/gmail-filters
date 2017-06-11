@@ -63,7 +63,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       noreply@insideicloud.icloud.com
       nominet@nominet.org.uk
       no-reply@pingdom.com
-
+      docs.google.com
       autoresponder@rightmove.com
       no-reply@certificates.amazon.com
     }
