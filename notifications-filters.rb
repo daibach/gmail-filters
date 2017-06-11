@@ -97,6 +97,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       tumblr.com
       yammer.com
       untappd.com
+      feedback@slack.com
     }
     has [{:or => "from:(#{social_emails.join("|")})"}]
     label 'deletable/other-social'
