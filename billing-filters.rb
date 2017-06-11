@@ -136,6 +136,10 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'deletable/newsletters'
   }
 
+  filter {
+    has %w{from:donotreply@tfl.gov.uk}
+    label 'billing & banking/notices'
+  }
 
 
   filter {
