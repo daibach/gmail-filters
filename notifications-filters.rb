@@ -75,7 +75,11 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'deletable/other-notifications'
   }
   filter {
-    has %w{subject:"expires" from:support-renew@gandi.net}
+    has %w{(subject:"expires" OR subject:"expired") from:support-renew@gandi.net}
+    label 'deletable/other-notifications'
+  }
+  filter {
+    has %w{(subject:"domain name renewed") from:support-renew@gandi.net}
     label 'deletable/other-notifications'
   }
 
