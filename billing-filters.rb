@@ -104,6 +104,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       webmaster@travelodge.co.uk
       autoresponse@tfl.gov.uk
       zipcar.com
+      mytaxi.com
       mytaxi.net
       enterprise.com
     }
