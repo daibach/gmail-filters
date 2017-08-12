@@ -42,6 +42,11 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'billing & banking/apple'
     never_spam
   }
+  filter {
+    has %w{from:email.apple.com subject:"invoice"}
+    label 'billing & banking/apple'
+    never_spam
+  }
 
 
 

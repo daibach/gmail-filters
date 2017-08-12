@@ -91,7 +91,6 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       info@meetup.com
       noreply@mail.theguardian.com
       applepay.apple.com
-      email.apple.com
       id.apple.com
       fitbit.com
       flickr.com
@@ -104,6 +103,10 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       feedback@slack.com
     }
     has [{:or => "from:(#{social_emails.join("|")})"}]
+    label 'deletable/other-social'
+  }
+  filter {
+    has %w{email.apple.com -subject:"invoice:}
     label 'deletable/other-social'
   }
   filter {
