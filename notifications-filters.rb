@@ -82,6 +82,18 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     has %w{(subject:"domain name renewed") from:support-renew@gandi.net}
     label 'deletable/other-notifications'
   }
+  filter {
+    has %w{(subject:"[GANDI]") from:gandi.net}
+    label 'deletable/other-notifications'
+  }
+  filter {
+    has %w{from:paypal@mail.paypal.co.uk subject:"recent transactions"}
+    label 'deletable/other-notifications'
+  }
+  filter {
+    has %w{from:notifications@github.com}
+    label 'deletable/github'
+  }
 
 
   filter {
