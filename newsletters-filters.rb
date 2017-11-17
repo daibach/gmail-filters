@@ -39,6 +39,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     newsletter_emails = %w{
       enquiries@macknade.com
       newsletter@reply.ltmuseumshop.co.uk
+      newsletter@ltmuseumshop.co.uk
       news@grind.co.uk
       axainsurance@enablermail.com
       hello@monzoemail.com
@@ -48,15 +49,28 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       info@eebria.com
       zipcar@zipcar.co.uk
       email@email.fitnessfirst.com
+      noreply@mail.dwfitnessfirst.com
       GOVUK@public.govdelivery.com
+      admin@kielderobservatory.org
+      OpenRights@electoralreform.co.uk
+      noreply@swipii.com
+      mail@info.adobesystems.com
     }
     has [{:or => "from:(#{newsletter_emails.join("|")})"}]
     label 'deletable/newsletters'
   }
+
   filter {
     has %w{from:GOVUK@public.govdelivery.com}
     label 'deletable/newsletters'
   }
+
+  filter {
+    has %w{from:e.emirates.travel
+      OR from:e.emirates.email}
+    label 'deletable/newsletters'
+  }
+
   filter {
     has %w{from:gareth@morethanseven.net}
     label 'mailinglist/devops'
