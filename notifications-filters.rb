@@ -57,6 +57,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       gis@monmouthshire.gov.uk
       updates.hungryhouse.co.uk
       info.tfl.gov.uk
+      Transport_for_London@email.tfl.gov.uk
       newrelic.com
       dropbox.com
       trello.com
