@@ -34,6 +34,11 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
     label 'misc/website-contact'
     never_spam
   }
+  filter {
+    has %w{subject:"Domain Expiry Alert" from:daibach.co.uk}
+    label 'deletable/other-notifications'
+    never_spam
+  }
 end
 
 puts fs.generate
