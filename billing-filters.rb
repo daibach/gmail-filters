@@ -112,6 +112,7 @@ fs = GmailBritta.filterset(:me => MY_EMAILS) do
       mytaxi.com
       mytaxi.net
       enterprise.com
+      do-not-reply@gett.com
     }
     has [{:or => "from:(#{travel_emails.join("|")})"}]
     label 'billing & banking/travel'
